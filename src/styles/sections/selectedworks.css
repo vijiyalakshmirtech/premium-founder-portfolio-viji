@@ -484,9 +484,8 @@
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:30px;
-
-    margin-bottom:70px;
+    gap:36px;
+    margin-bottom:90px;
 
 }
 
@@ -497,13 +496,14 @@
 .project-card{
     position:relative;
     overflow:hidden;
-    padding:44px;
+    padding:48px;
     border-radius:28px;
     background:linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
     border:1px solid rgba(255,255,255,.10);
-    backdrop-filter:blur(20px);
+    backdrop-filter:blur(22px);
     transition:transform .45s cubic-bezier(.2,.9,.2,1), box-shadow .45s ease, border-color .45s ease;
-    box-shadow:0 22px 58px rgba(0,0,0,.28);
+    box-shadow:0 28px 70px rgba(0,0,0,.30);
+    min-height:260px;
 }
 
 /* ==========================================================
@@ -1381,3 +1381,14 @@
 /* ==========================================================
    SECTION END
 ========================================================== */
+/* subtle animated background shift for cinematic feel */
+@keyframes imageBGShift{
+    0%{ background-position:0% 50%; }
+    50%{ background-position:100% 50%; }
+    100%{ background-position:0% 50%; }
+}
+
+.image-placeholder{
+    background-size:200% 200%;
+    animation:imageBGShift 18s ease-in-out infinite;
+}
