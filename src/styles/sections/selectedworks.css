@@ -387,6 +387,9 @@
     letter-spacing:0.06em;
     text-align:center;
     padding:24px;
+    background-size:140% 140%;
+    will-change:transform, background-position;
+    animation: imageBGShift 18s ease-in-out infinite;
 }
 
 .image-placeholder strong{
@@ -400,6 +403,20 @@
     color:rgba(255,255,255,.76);
     font-size:0.95rem;
     line-height:1.7;
+}
+
+@keyframes imageBGShift{
+    0%{ background-position:0% 50%; }
+    50%{ background-position:100% 50%; }
+    100%{ background-position:0% 50%; }
+}
+
+@keyframes kenBurns{
+    0%{ transform:scale(1) translateY(0); }
+    25%{ transform:scale(1.03) translateY(-4px); }
+    50%{ transform:scale(1.06) translateY(-8px); }
+    75%{ transform:scale(1.03) translateY(-4px); }
+    100%{ transform:scale(1) translateY(0); }
 }
 
 /* Cinematic reveal for featured image */
