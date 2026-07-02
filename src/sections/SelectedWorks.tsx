@@ -1,4 +1,5 @@
 import "../styles/sections/selectedworks.css";
+import LottiePreview from "../components/LottiePreview";
 
 export default function SelectedWorks() {
   return (
@@ -53,6 +54,11 @@ export default function SelectedWorks() {
 
         <div className="projects-grid">
           <div className="project-card">
+            <div className="project-media">
+              <div className="media-placeholder">
+                <LottiePreview src="/lottie/sample.json" />
+              </div>
+            </div>
             <span className="project-category">Fashion Brand</span>
             <h3>SUXUS</h3>
             <p>
@@ -71,6 +77,11 @@ export default function SelectedWorks() {
           </div>
 
           <div className="project-card">
+            <div className="project-media">
+              <div className="media-placeholder">
+                <LottiePreview src="/lottie/sample.json" />
+              </div>
+            </div>
             <span className="project-category">FinTech</span>
             <h3>BIZPRO FINTECH</h3>
             <p>
@@ -89,6 +100,11 @@ export default function SelectedWorks() {
           </div>
 
           <div className="project-card">
+            <div className="project-media">
+              <div className="media-placeholder">
+                <LottiePreview src="/lottie/sample.json" />
+              </div>
+            </div>
             <span className="project-category">Fashion & Lifestyle</span>
             <h3>Colours Collection</h3>
             <p>
@@ -107,6 +123,11 @@ export default function SelectedWorks() {
           </div>
 
           <div className="project-card">
+            <div className="project-media">
+              <div className="media-placeholder">
+                <LottiePreview src="/lottie/sample.json" />
+              </div>
+            </div>
             <span className="project-category">Education & Community</span>
             <h3>Vanna Siragugal</h3>
             <p>

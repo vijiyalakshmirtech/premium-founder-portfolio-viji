@@ -3,6 +3,7 @@ import "../styles/sections/hero.css";
 import Button from "../components/Button";
 
 import portrait from "../assets/yuvaraj.png";
+import HeroVideo from "../components/HeroVideo";
 
 const socialLinks = [
   {
@@ -206,11 +207,13 @@ export default function Hero() {
 
             <div className="hero-image-wrapper">
 
-              <img
-                src={portrait}
-                alt="Yuvaraj Ramalingam"
-                className="hero-image"
-              />
+                <HeroVideo className="hero-video" />
+
+                <img
+                  src={portrait}
+                  alt="Yuvaraj Ramalingam"
+                  className="hero-image"
+                />
 
             </div>
 
