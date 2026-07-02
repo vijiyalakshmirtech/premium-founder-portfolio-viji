@@ -1,0 +1,111 @@
+/* ==========================================================
+   HERO DESCRIPTION
+========================================================== */
+
+.hero-description-wrapper{
+
+    width:100%;
+
+    max-width:720px;
+
+    margin-bottom:48px;
+
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.hero-description{
+
+    font-size:20px;
+
+    font-weight:400;
+
+    line-height:1.9;
+
+    color:#5F6C80;
+
+    letter-spacing:.01em;
+
+}
+
+/* ==========================================================
+   EMPHASIS
+========================================================== */
+
+.hero-description strong{
+
+    color:#081C47;
+
+    font-weight:700;
+
+}
+
+.hero-description span{
+
+    color:#0E2F76;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+.hero-description a{
+
+    color:#3574C0;
+
+    text-decoration:none;
+
+    transition:color .3s ease;
+
+}
+
+.hero-description a:hover{
+
+    color:#081C47;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1200px){
+
+.hero-description-wrapper{
+
+margin-inline:auto;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-description{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-description{
+
+font-size:16px;
+
+line-height:1.75;
+
+}
+
+}

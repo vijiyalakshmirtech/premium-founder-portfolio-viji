@@ -1,0 +1,94 @@
+/* ==========================================================
+   SEYONIX
+   PAGE LAYOUT
+========================================================== */
+
+.page-layout{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+}
+
+.page-container{
+
+    position:relative;
+
+    width:min(1400px,92%);
+
+    margin-inline:auto;
+
+    z-index:2;
+
+}
+
+/* ==========================================================
+   DEFAULT SECTION
+========================================================== */
+
+.page-container section{
+
+    position:relative;
+
+    padding:120px 0;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1024px){
+
+.page-container{
+
+width:94%;
+
+}
+
+.page-container section{
+
+padding:90px 0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.page-container{
+
+width:92%;
+
+}
+
+.page-container section{
+
+padding:72px 0;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.page-container{
+
+width:90%;
+
+}
+
+.page-container section{
+
+padding:64px 0;
+
+}
+
+}

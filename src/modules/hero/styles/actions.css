@@ -1,0 +1,187 @@
+/* ==========================================================
+   HERO ACTIONS
+========================================================== */
+
+.hero-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:56px;
+
+}
+
+/* ==========================================================
+   BUTTON BASE
+========================================================== */
+
+.hero-actions .btn{
+
+    position:relative;
+
+    min-width:220px;
+
+    height:58px;
+
+    padding:0 34px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    letter-spacing:.02em;
+
+    overflow:hidden;
+
+    transition:
+        transform .35s cubic-bezier(.2,.8,.2,1),
+        box-shadow .35s ease,
+        background .35s ease,
+        border-color .35s ease,
+        color .35s ease;
+
+}
+
+.hero-actions .btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,.28) 45%, transparent 100%);
+
+    transform:translateX(-140%);
+
+    transition:transform .6s ease;
+
+}
+
+/* ==========================================================
+   PRIMARY BUTTON
+========================================================== */
+
+.hero-actions .btn-primary{
+
+    background:linear-gradient(
+        135deg,
+        #081C47,
+        #0E2F76,
+        #3574C0
+    );
+
+    color:#ffffff;
+
+    border:none;
+
+    box-shadow:
+        0 20px 40px rgba(8,28,71,.22);
+
+}
+
+.hero-actions .btn-primary:hover{
+
+    transform:translateY(-6px) scale(1.02);
+
+    box-shadow:
+        0 28px 55px rgba(8,28,71,.30);
+
+}
+
+.hero-actions .btn-primary:hover::before{
+
+    transform:translateX(140%);
+
+}
+
+/* ==========================================================
+   OUTLINE BUTTON
+========================================================== */
+
+.hero-actions .btn-outline{
+
+    background:rgba(255,255,255,.08);
+
+    color:#081C47;
+
+    border:1px solid rgba(8,28,71,.18);
+
+    backdrop-filter:blur(18px);
+
+}
+
+.hero-actions .btn-outline:hover{
+
+    background:#081C47;
+
+    color:#ffffff;
+
+    border-color:#081C47;
+
+    transform:translateY(-6px) scale(1.02);
+
+}
+
+.hero-actions .btn-outline:hover::before{
+
+    transform:translateX(140%);
+
+}
+
+/* ==========================================================
+   ACTIVE
+========================================================== */
+
+.hero-actions .btn:active{
+
+    transform:translateY(-1px) scale(.98);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+.hero-actions{
+
+justify-content:center;
+
+}
+
+.hero-actions .btn{
+
+width:100%;
+
+max-width:340px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-actions{
+
+flex-direction:column;
+
+gap:16px;
+
+}
+
+.hero-actions .btn{
+
+width:100%;
+
+}
+
+}

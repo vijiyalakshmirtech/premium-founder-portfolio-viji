@@ -1,0 +1,906 @@
+/* =====================================================
+   EXPERTISE SECTION
+===================================================== */
+
+.expertise{
+
+position:relative;
+
+padding:140px 0;
+
+overflow:hidden;
+
+background:#081D52;
+
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.expertise-container{
+
+width:92%;
+
+max-width:1400px;
+
+margin:auto;
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* =====================================================
+   BACKGROUND GLOW
+===================================================== */
+
+.expertise::before{
+
+content:"";
+
+position:absolute;
+
+left:-250px;
+
+top:-250px;
+
+width:650px;
+
+height:650px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,#D4AF37 0%,transparent 70%);
+
+opacity:.08;
+
+filter:blur(120px);
+
+}
+
+.expertise::after{
+
+content:"";
+
+position:absolute;
+
+right:-280px;
+
+bottom:-280px;
+
+width:700px;
+
+height:700px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,#2957C8 0%,transparent 70%);
+
+opacity:.12;
+
+filter:blur(140px);
+
+}
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.section-heading{
+
+max-width:760px;
+
+margin:0 auto 80px;
+
+text-align:center;
+
+}
+
+.section-heading h2{
+
+font-size:60px;
+
+font-weight:800;
+
+line-height:1.1;
+
+color:#ffffff;
+
+margin-top:22px;
+
+margin-bottom:28px;
+
+}
+
+.section-heading p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#BFD0EB;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+/* =====================================================
+   SECTION TAG
+===================================================== */
+
+.section-tag{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:12px 24px;
+
+border-radius:999px;
+
+background:rgba(212,175,55,.10);
+
+border:1px solid rgba(212,175,55,.25);
+
+color:#D4AF37;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+}
+
+.section-tag::before{
+
+content:"";
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+background:#D4AF37;
+
+box-shadow:0 0 18px rgba(212,175,55,.55);
+
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.expertise-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+align-items:stretch;
+
+}
+/* =====================================================
+   EXPERTISE CARD
+===================================================== */
+
+.expertise-card{
+
+position:relative;
+
+padding:38px;
+
+border-radius:28px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+overflow:hidden;
+
+transition:all .45s ease;
+
+cursor:pointer;
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   GOLD LEFT BAR
+========================================== */
+
+.expertise-card::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:5px;
+
+height:100%;
+
+background:linear-gradient(
+
+180deg,
+
+#D4AF37,
+
+#FFD66B
+
+);
+
+border-radius:10px;
+
+opacity:.85;
+
+}
+
+/* ==========================================
+   TOP GLOW
+========================================== */
+
+.expertise-card::after{
+
+content:"";
+
+position:absolute;
+
+top:-80px;
+
+right:-80px;
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+
+rgba(212,175,55,.18),
+
+transparent 70%);
+
+opacity:0;
+
+transition:.45s;
+
+}
+
+.expertise-card:hover::after{
+
+opacity:1;
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.expertise-icon{
+
+width:78px;
+
+height:78px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+border-radius:22px;
+
+background:rgba(212,175,55,.12);
+
+border:1px solid rgba(212,175,55,.20);
+
+margin-bottom:28px;
+
+transition:all .45s ease;
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.expertise-card h3{
+
+font-size:24px;
+
+font-weight:700;
+
+line-height:1.4;
+
+color:#ffffff;
+
+margin-bottom:18px;
+
+transition:.35s;
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.expertise-card p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#C8D4E8;
+
+transition:.35s;
+
+}
+
+/* ==========================================
+   HOVER
+========================================== */
+
+.expertise-card:hover{
+
+transform:
+
+translateY(-10px)
+
+scale(1.02);
+
+border-color:
+
+rgba(212,175,55,.35);
+
+box-shadow:
+
+0 35px 90px rgba(0,0,0,.35);
+
+}
+
+.expertise-card:hover .expertise-icon{
+
+background:#D4AF37;
+
+color:#081D52;
+
+transform:
+
+rotate(-6deg)
+
+scale(1.08);
+
+}
+
+.expertise-card:hover h3{
+
+color:#FFD66B;
+
+}
+
+.expertise-card:hover p{
+
+color:#ffffff;
+
+}
+/* =====================================================
+   EXPERTISE CARD
+===================================================== */
+
+.expertise-card{
+
+position:relative;
+
+padding:38px;
+
+border-radius:28px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+overflow:hidden;
+
+transition:all .45s ease;
+
+cursor:pointer;
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   GOLD LEFT BAR
+========================================== */
+
+.expertise-card::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:5px;
+
+height:100%;
+
+background:linear-gradient(
+
+180deg,
+
+#D4AF37,
+
+#FFD66B
+
+);
+
+border-radius:10px;
+
+opacity:.85;
+
+}
+
+/* ==========================================
+   TOP GLOW
+========================================== */
+
+.expertise-card::after{
+
+content:"";
+
+position:absolute;
+
+top:-80px;
+
+right:-80px;
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+
+rgba(212,175,55,.18),
+
+transparent 70%);
+
+opacity:0;
+
+transition:.45s;
+
+}
+
+.expertise-card:hover::after{
+
+opacity:1;
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.expertise-icon{
+
+width:78px;
+
+height:78px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+border-radius:22px;
+
+background:rgba(212,175,55,.12);
+
+border:1px solid rgba(212,175,55,.20);
+
+margin-bottom:28px;
+
+transition:all .45s ease;
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.expertise-card h3{
+
+font-size:24px;
+
+font-weight:700;
+
+line-height:1.4;
+
+color:#ffffff;
+
+margin-bottom:18px;
+
+transition:.35s;
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.expertise-card p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#C8D4E8;
+
+transition:.35s;
+
+}
+
+/* ==========================================
+   HOVER
+========================================== */
+
+.expertise-card:hover{
+
+transform:
+
+translateY(-10px)
+
+scale(1.02);
+
+border-color:
+
+rgba(212,175,55,.35);
+
+box-shadow:
+
+0 35px 90px rgba(0,0,0,.35);
+
+}
+
+.expertise-card:hover .expertise-icon{
+
+background:#D4AF37;
+
+color:#081D52;
+
+transform:
+
+rotate(-6deg)
+
+scale(1.08);
+
+}
+
+.expertise-card:hover h3{
+
+color:#FFD66B;
+
+}
+
+.expertise-card:hover p{
+
+color:#ffffff;
+
+}
+/* =====================================================
+   RESPONSIVE - LARGE LAPTOP
+===================================================== */
+
+@media (max-width:1400px){
+
+.expertise-container{
+
+max-width:1200px;
+
+}
+
+.section-heading h2{
+
+font-size:54px;
+
+}
+
+.expertise-grid{
+
+gap:26px;
+
+}
+
+}
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width:1100px){
+
+.expertise{
+
+padding:110px 0;
+
+}
+
+.section-heading{
+
+margin-bottom:60px;
+
+}
+
+.section-heading h2{
+
+font-size:46px;
+
+}
+
+.section-heading p{
+
+font-size:18px;
+
+}
+
+.expertise-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:24px;
+
+}
+
+.expertise-card{
+
+padding:32px;
+
+}
+
+.expertise-icon{
+
+width:70px;
+
+height:70px;
+
+font-size:30px;
+
+}
+
+.expertise-card h3{
+
+font-size:22px;
+
+}
+
+}
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+.expertise{
+
+padding:90px 0;
+
+}
+
+.section-heading{
+
+margin-bottom:50px;
+
+}
+
+.section-heading h2{
+
+font-size:36px;
+
+line-height:1.2;
+
+}
+
+.section-heading p{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+.expertise-grid{
+
+grid-template-columns:1fr;
+
+gap:22px;
+
+}
+
+.expertise-card{
+
+padding:28px;
+
+border-radius:22px;
+
+}
+
+.expertise-icon{
+
+width:64px;
+
+height:64px;
+
+font-size:28px;
+
+margin-bottom:22px;
+
+}
+
+.expertise-card h3{
+
+font-size:20px;
+
+margin-bottom:12px;
+
+}
+
+.expertise-card p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width:480px){
+
+.section-heading h2{
+
+font-size:30px;
+
+}
+
+.section-heading p{
+
+font-size:15px;
+
+}
+
+.section-tag{
+
+font-size:11px;
+
+padding:10px 18px;
+
+letter-spacing:1.5px;
+
+}
+
+.expertise-card{
+
+padding:24px;
+
+}
+
+.expertise-icon{
+
+width:58px;
+
+height:58px;
+
+font-size:24px;
+
+}
+
+}
+
+/* =====================================================
+   FINAL POLISH
+===================================================== */
+
+.expertise *{
+
+box-sizing:border-box;
+
+}
+
+.expertise h2,
+
+.expertise h3,
+
+.expertise p{
+
+margin:0;
+
+}
+
+.expertise-card{
+
+will-change:transform;
+
+}
+
+.expertise-card:hover{
+
+transition:all .35s ease;
+
+}
+
+.expertise-card p{
+
+max-width:95%;
+
+}
+
+.expertise-card h3{
+
+min-height:64px;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.expertise-grid{
+
+align-items:stretch;
+
+}
+
+.expertise-card{
+
+height:100%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-start;
+
+}

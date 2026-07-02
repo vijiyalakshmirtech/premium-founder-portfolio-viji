@@ -1,0 +1,637 @@
+/* ==========================================================
+   JOURNEY SECTION
+========================================================== */
+
+.journey{
+    position: relative;
+    overflow: hidden;
+    padding: 140px 0;
+    background: linear-gradient(
+        180deg,
+        #081D52 0%,
+        #0B214F 50%,
+        #081D52 100%
+    );
+}
+
+/* ==========================================================
+   BACKGROUND GLOW
+========================================================== */
+
+.journey-glow{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.journey-glow-1{
+    width: 420px;
+    height: 420px;
+    background: rgba(251,196,0,.10);
+    top: -120px;
+    left: -120px;
+}
+
+.journey-glow-2{
+    width: 450px;
+    height: 450px;
+    background: rgba(59,130,246,.10);
+    bottom: -180px;
+    right: -120px;
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.journey-container{
+    position: relative;
+    z-index: 2;
+
+    width: min(1200px,92%);
+    margin: auto;
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.journey-header{
+    max-width: 760px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+/* ==========================================================
+   BADGE
+========================================================== */
+
+.journey-badge{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(251,196,0,.25);
+
+    background:rgba(255,255,255,.05);
+
+    color:#FBC400;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:26px;
+
+    backdrop-filter:blur(18px);
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.journey-title{
+
+    font-size:clamp(2.5rem,5vw,4.3rem);
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    color:#ffffff;
+
+    margin-bottom:24px;
+
+}
+
+.journey-title span{
+
+    color:#FBC400;
+
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.journey-description{
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.78);
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+/* ==========================================================
+   TIMELINE
+========================================================== */
+
+.journey-timeline{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    margin-bottom:90px;
+
+    padding:0 20px;
+
+}
+
+/* ==========================================================
+   TIMELINE LINE
+========================================================== */
+
+.timeline-line{
+
+    position:absolute;
+
+    top:22px;
+
+    left:5%;
+
+    right:5%;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(251,196,0,.25),
+        #FBC400,
+        rgba(251,196,0,.25)
+    );
+
+    z-index:0;
+
+}
+
+/* ==========================================================
+   TIMELINE ITEM
+========================================================== */
+
+.timeline-item{
+
+    position:relative;
+
+    z-index:2;
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+/* ==========================================================
+   TIMELINE DOT
+========================================================== */
+
+.timeline-dot{
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#112960;
+
+    border:3px solid #FBC400;
+
+    box-shadow:
+        0 0 0 8px rgba(251,196,0,.08),
+        0 0 30px rgba(251,196,0,.25);
+
+    transition:.35s ease;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================================
+   ACTIVE DOT
+========================================================== */
+
+.timeline-item.active .timeline-dot{
+
+    background:#FBC400;
+
+    transform:scale(1.15);
+
+    box-shadow:
+        0 0 0 10px rgba(251,196,0,.15),
+        0 0 40px rgba(251,196,0,.45);
+
+}
+
+/* ==========================================================
+   TIMELINE TITLE
+========================================================== */
+
+.timeline-item h4{
+
+    color:#ffffff;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    transition:.3s ease;
+
+}
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.timeline-item:hover .timeline-dot{
+
+    transform:translateY(-4px) scale(1.12);
+
+}
+
+.timeline-item:hover h4{
+
+    color:#FBC400;
+
+}
+/* ==========================================================
+   JOURNEY GRID
+========================================================== */
+
+.journey-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:32px;
+
+    margin-top:30px;
+
+}
+
+/* ==========================================================
+   JOURNEY CARD
+========================================================== */
+
+.journey-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:42px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+
+    transition:all .45s ease;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================================
+   GOLD TOP BORDER
+========================================================== */
+
+.journey-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        #FBC400,
+        #FFD95A,
+        #FBC400
+    );
+
+    opacity:.9;
+
+}
+
+/* ==========================================================
+   CARD NUMBER
+========================================================== */
+
+.journey-number{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    margin-bottom:26px;
+
+    font-size:1.25rem;
+
+    font-weight:800;
+
+    color:#FBC400;
+
+    background:rgba(251,196,0,.08);
+
+    border:1px solid rgba(251,196,0,.25);
+
+}
+
+/* ==========================================================
+   CARD TITLE
+========================================================== */
+
+.journey-card h3{
+
+    color:#ffffff;
+
+    font-size:1.65rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================================
+   CARD DESCRIPTION
+========================================================== */
+
+.journey-card p{
+
+    color:rgba(255,255,255,.78);
+
+    line-height:1.9;
+
+    font-size:1rem;
+
+}
+
+/* ==========================================================
+   WIDE CARD
+========================================================== */
+
+.journey-card-wide{
+
+    grid-column:1 / -1;
+
+}
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.journey-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(251,196,0,.35);
+
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.35),
+        0 0 45px rgba(251,196,0,.10);
+
+}
+
+.journey-card:hover .journey-number{
+
+    background:#FBC400;
+
+    color:#081D52;
+
+    transform:scale(1.08);
+
+}
+
+.journey-card:hover h3{
+
+    color:#FBC400;
+
+}
+/* ==========================================================
+   JOURNEY GRID
+========================================================== */
+
+.journey-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:32px;
+
+    margin-top:30px;
+
+}
+
+/* ==========================================================
+   JOURNEY CARD
+========================================================== */
+
+.journey-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:42px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+
+    transition:all .45s ease;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================================
+   GOLD TOP BORDER
+========================================================== */
+
+.journey-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        #FBC400,
+        #FFD95A,
+        #FBC400
+    );
+
+    opacity:.9;
+
+}
+
+/* ==========================================================
+   CARD NUMBER
+========================================================== */
+
+.journey-number{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    margin-bottom:26px;
+
+    font-size:1.25rem;
+
+    font-weight:800;
+
+    color:#FBC400;
+
+    background:rgba(251,196,0,.08);
+
+    border:1px solid rgba(251,196,0,.25);
+
+}
+
+/* ==========================================================
+   CARD TITLE
+========================================================== */
+
+.journey-card h3{
+
+    color:#ffffff;
+
+    font-size:1.65rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================================
+   CARD DESCRIPTION
+========================================================== */
+
+.journey-card p{
+
+    color:rgba(255,255,255,.78);
+
+    line-height:1.9;
+
+    font-size:1rem;
+
+}
+
+/* ==========================================================
+   WIDE CARD
+========================================================== */
+
+.journey-card-wide{
+
+    grid-column:1 / -1;
+
+}
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.journey-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(251,196,0,.35);
+
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.35),
+        0 0 45px rgba(251,196,0,.10);
+
+}
+
+.journey-card:hover .journey-number{
+
+    background:#FBC400;
+
+    color:#081D52;
+
+    transform:scale(1.08);
+
+}
+
+.journey-card:hover h3{
+
+    color:#FBC400;
+
+}
