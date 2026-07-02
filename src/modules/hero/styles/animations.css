@@ -1,0 +1,219 @@
+/* ==========================================================
+   HERO ANIMATIONS
+========================================================== */
+
+/* ==========================================================
+   FADE UP
+========================================================== */
+
+@keyframes heroFadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   FLOAT
+========================================================== */
+
+@keyframes heroFloat{
+
+    0%{
+
+        transform:perspective(1400px) rotateY(-10deg) rotateX(4deg) translateY(0);
+
+    }
+
+    50%{
+
+        transform:perspective(1400px) rotateY(-7deg) rotateX(2deg) translateY(-14px);
+
+    }
+
+    100%{
+
+        transform:perspective(1400px) rotateY(-10deg) rotateX(4deg) translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   ROTATE
+========================================================== */
+
+@keyframes heroRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================================
+   GLOW PULSE
+========================================================== */
+
+@keyframes heroGlowPulse{
+
+    0%{
+
+        opacity:.25;
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        opacity:.45;
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        opacity:.25;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   TITLE GLOW
+========================================================== */
+
+@keyframes heroTitleGlow{
+
+    0%, 100%{
+
+        transform:scale(.96);
+
+        opacity:.7;
+
+    }
+
+    50%{
+
+        transform:scale(1.04);
+
+        opacity:.95;
+
+    }
+
+}
+
+/* ==========================================================
+   SHINE
+========================================================== */
+
+@keyframes heroShine{
+
+    from{
+
+        transform:translateX(-120%);
+
+    }
+
+    to{
+
+        transform:translateX(120%);
+
+    }
+
+}
+
+/* ==========================================================
+   APPLY ANIMATIONS
+========================================================== */
+
+.hero-heading{
+
+    animation:heroFadeUp .8s ease both;
+
+}
+
+.hero-description-wrapper{
+
+    animation:heroFadeUp 1s ease both;
+
+}
+
+.hero-actions{
+
+    animation:heroFadeUp 1.2s ease both;
+
+}
+
+.hero-social{
+
+    animation:heroFadeUp 1.35s ease both;
+
+}
+
+.hero-metrics{
+
+    animation:heroFadeUp 1.5s ease both;
+
+}
+
+.hero-image-wrapper{
+
+    animation:heroFloat 6s ease-in-out infinite;
+
+}
+
+.hero-image-ring{
+
+    animation:heroRotate 20s linear infinite;
+
+}
+
+.hero-image-glow{
+
+    animation:heroGlowPulse 6s ease-in-out infinite;
+
+}
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+*{
+
+animation:none!important;
+
+transition:none!important;
+
+scroll-behavior:auto!important;
+
+}
+
+}

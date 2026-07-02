@@ -1,0 +1,38 @@
+:root{
+/* Primary */
+--primary:#0E2F76;
+--primary-dark:#08182F;
+--primary-light:#1D4FA3;
+
+/* Accent palette */
+--accent-royal:#0E2F76;
+--accent-gold:#D4AF37;
+--accent-silver:#A9C0E0;
+
+/* Secondary */
+--secondary:#A9C0E0;
+--secondary-light:#D9E7F7;
+
+/* Gold */
+--gold:#D4AF37;
+--gold-light:#F2D77A;
+
+/* Background */
+--background:#08182F;
+--surface:#10264A;
+--surface-light:#173A6B;
+
+/* Text */
+--white:#FFFFFF;
+--text:#DDE7F5;
+--muted:#90A7C7;
+
+/* Border */
+--border:#244978;
+
+/* Radius */
+--radius:20px;
+
+/* Shadow */
+--shadow:0 20px 60px rgba(0,0,0,.35);
+}

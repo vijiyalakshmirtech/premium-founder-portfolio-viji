@@ -1,0 +1,57 @@
+.primary-btn{
+
+padding:18px 38px;
+
+border-radius:999px;
+
+font-size:16px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.35s;
+
+border:none;
+
+}
+
+.primary-btn.gold{
+
+background:#D4AF37;
+
+color:#08182F;
+
+box-shadow:
+
+0 15px 35px rgba(212,175,55,.35);
+
+}
+
+.primary-btn.gold:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 25px 45px rgba(212,175,55,.45);
+
+}
+
+.primary-btn.outline{
+
+background:transparent;
+
+border:1px solid rgba(255,255,255,.2);
+
+color:white;
+
+}
+
+.primary-btn.outline:hover{
+
+background:rgba(255,255,255,.08);
+
+transform:translateY(-4px);
+
+}

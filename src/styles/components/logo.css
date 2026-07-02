@@ -1,0 +1,11 @@
+.logo{
+font-size:22px;
+font-weight:800;
+letter-spacing:0.24em;
+text-transform:uppercase;
+color:white;
+background:linear-gradient(135deg, #ffffff 0%, #D4AF37 45%, #A9C0E0 100%);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+}

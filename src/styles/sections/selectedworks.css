@@ -1,0 +1,1383 @@
+/* ==========================================================
+   SELECTED WORKS SECTION
+========================================================== */
+
+.selected-works{
+    position:relative;
+    overflow:hidden;
+    padding:140px 0;
+    background:linear-gradient(135deg, #071935 0%, #0B214F 45%, #081D52 100%);
+}
+
+/* ==========================================================
+   BACKGROUND GLOW
+========================================================== */
+
+.works-glow{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(130px);
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.works-glow-1{
+
+    width:420px;
+
+    height:420px;
+
+    background:rgba(251,196,0,.08);
+
+    top:-150px;
+
+    left:-150px;
+
+}
+
+.works-glow-2{
+
+    width:480px;
+
+    height:480px;
+
+    background:rgba(34,75,155,.15);
+
+    bottom:-180px;
+
+    right:-150px;
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.works-container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:92%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.works-header{
+
+    max-width:780px;
+
+    margin:0 auto 90px;
+
+    text-align:center;
+
+}
+
+.works-byline{
+
+    color:rgba(255,255,255,.72);
+
+    font-size:0.95rem;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+    letter-spacing:0.08em;
+
+}
+
+/* ==========================================================
+   BADGE
+========================================================== */
+
+.works-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 24px;
+    border-radius:999px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(251,196,0,.28);
+    backdrop-filter:blur(18px);
+    color:#FBC400;
+    font-size:.82rem;
+    font-weight:700;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    margin-bottom:28px;
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.works-title{
+
+    font-size:clamp(2.7rem,5vw,4.5rem);
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    color:#ffffff;
+
+    margin-bottom:26px;
+
+}
+
+.works-title{
+
+    font-family:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+
+}
+
+.works-title .title-line{
+
+    display:block;
+
+    background:linear-gradient(90deg,#ffffff,#FBC400 60%);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.works-description{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:rgba(255,255,255,.78);
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+}
+/* ==========================================================
+   FEATURED PROJECT
+========================================================== */
+
+.featured-project{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:50px;
+    align-items:center;
+    margin-bottom:80px;
+    padding:55px;
+    border-radius:34px;
+    background:linear-gradient(135deg, rgba(255,255,255,.11), rgba(255,255,255,.05));
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(25px);
+    box-shadow:0 35px 90px rgba(0,0,0,.35);
+    transition:transform .45s ease, box-shadow .45s ease, border-color .45s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.featured-project::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(251,196,0,.06),
+        transparent 40%,
+        rgba(34,75,155,.08)
+    );
+
+    pointer-events:none;
+
+}
+
+/* ==========================================================
+   FEATURED CONTENT
+========================================================== */
+
+.featured-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.featured-category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 20px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:rgba(251,196,0,.10);
+
+    border:1px solid rgba(251,196,0,.25);
+
+    color:#FBC400;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+}
+
+.featured-content h3{
+
+    font-size:3rem;
+
+    color:#ffffff;
+
+    font-weight:800;
+
+    margin-bottom:22px;
+
+}
+
+.featured-content p{
+
+    color:rgba(255,255,255,.78);
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+    margin-bottom:34px;
+
+}
+
+/* ==========================================================
+   FEATURED TAGS
+========================================================== */
+
+.featured-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-bottom:35px;
+
+}
+
+.featured-tags span{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#DCE6F5;
+
+    font-size:.9rem;
+
+}
+
+/* ==========================================================
+   FEATURED BUTTON
+========================================================== */
+
+.project-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #FBC400,
+        #FFD95A
+    );
+
+    color:#081D52;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+}
+
+.project-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 40px rgba(251,196,0,.30);
+
+}
+
+/* ==========================================================
+   FEATURED IMAGE
+========================================================== */
+
+.featured-image{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    height:420px;
+
+}
+
+.image-placeholder{
+    width:100%;
+    height:100%;
+    border-radius:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.03));
+    border:1px solid rgba(251,196,0,.18);
+    color:#FBC400;
+    font-size:1.15rem;
+    font-weight:600;
+    letter-spacing:0.06em;
+    text-align:center;
+    padding:24px;
+}
+
+.image-placeholder strong{
+    display:block;
+    color:#ffffff;
+    font-size:1.25rem;
+    margin-bottom:10px;
+}
+
+.image-placeholder p{
+    color:rgba(255,255,255,.76);
+    font-size:0.95rem;
+    line-height:1.7;
+}
+
+/* Cinematic reveal for featured image */
+
+.image-placeholder{
+    position:relative;
+    transform-origin:center;
+    transition:transform .9s cubic-bezier(.2,.8,.2,1), border-color .6s ease;
+}
+
+.image-placeholder::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg, rgba(255,255,255,.06), rgba(255,255,255,0));
+    transform:translateX(-110%);
+    transition:transform .9s cubic-bezier(.2,.8,.2,1);
+    pointer-events:none;
+}
+
+.image-placeholder > div{
+    transform:translateY(14px) scale(.98);
+    opacity:0;
+    transition:transform .7s cubic-bezier(.2,.8,.2,1), opacity .6s ease;
+}
+
+.featured-project:hover .image-placeholder::before{
+    transform:translateX(110%);
+}
+
+.featured-project:hover .image-placeholder{
+    transform:scale(1.035) translateZ(18px);
+    border-color:#FBC400;
+}
+
+.featured-project:hover .image-placeholder > div{
+    transform:translateY(0) scale(1);
+    opacity:1;
+}
+
+.project-btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.project-btn::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg, transparent 0%, rgba(255,255,255,.16) 40%, transparent 70%);
+    transform:translateX(-120%);
+    transition:transform .9s ease;
+    pointer-events:none;
+}
+
+.project-btn:hover::after{
+    transform:translateX(120%);
+}
+
+/* ==========================================================
+   FEATURED HOVER
+========================================================== */
+
+.featured-project:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(251,196,0,.30);
+
+    box-shadow:
+        0 45px 100px rgba(0,0,0,.40),
+        0 0 45px rgba(251,196,0,.08);
+
+}
+/* ==========================================================
+   PROJECT GRID
+========================================================== */
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-bottom:70px;
+
+}
+
+/* ==========================================================
+   PROJECT CARD
+========================================================== */
+
+.project-card{
+    position:relative;
+    overflow:hidden;
+    padding:44px;
+    border-radius:28px;
+    background:linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    border:1px solid rgba(255,255,255,.10);
+    backdrop-filter:blur(20px);
+    transition:transform .45s cubic-bezier(.2,.9,.2,1), box-shadow .45s ease, border-color .45s ease;
+    box-shadow:0 22px 58px rgba(0,0,0,.28);
+}
+
+/* ==========================================================
+   TOP ACCENT
+========================================================== */
+
+.project-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:6px;
+
+    background:linear-gradient(
+        90deg,
+        #FBC400,
+        #FFD95A,
+        #FBC400
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:transform .5s cubic-bezier(.2,.9,.2,1), opacity .45s ease;
+
+}
+
+/* ==========================================================
+   CATEGORY
+========================================================== */
+
+.project-category{
+
+    display:inline-flex;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    margin-bottom:20px;
+
+    background:rgba(251,196,0,.08);
+
+    border:1px solid rgba(251,196,0,.20);
+
+    color:#FBC400;
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.project-card h3{
+
+    color:#ffffff;
+
+    font-size:2.1rem;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+    letter-spacing:-0.02em;
+
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.project-card p{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.95;
+
+    font-size:1.04rem;
+
+    margin-bottom:28px;
+
+}
+
+/* ==========================================================
+   TAGS
+========================================================== */
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:28px;
+
+}
+
+.project-tags span{
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#DCE6F5;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   LINK
+========================================================== */
+
+.project-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    color:#FBC400;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.project-link:hover{
+
+    transform:translateX(8px);
+
+}
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(251,196,0,.28);
+
+    box-shadow:
+        0 35px 80px rgba(0,0,0,.35),
+        0 0 35px rgba(251,196,0,.10);
+
+}
+
+.project-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.project-card:hover h3{
+
+    color:#FBC400;
+
+}
+/* ==========================================================
+   WORKS FOOTER
+========================================================== */
+
+.works-footer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+}
+
+.works-footer p{
+
+    max-width:760px;
+
+    margin-bottom:36px;
+
+    color:rgba(255,255,255,.75);
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================================
+   VIEW ALL BUTTON
+========================================================== */
+
+.view-all-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 42px;
+
+    border:none;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #FBC400,
+        #FFD95A
+    );
+
+    color:#081D52;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 20px 40px rgba(251,196,0,.20);
+
+}
+
+.view-all-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 30px 60px rgba(251,196,0,.30);
+
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:1024px){
+
+    .featured-project{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        padding:40px;
+
+    }
+
+    .featured-content h3{
+
+        font-size:2.5rem;
+
+    }
+
+    .featured-image{
+
+        height:340px;
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .selected-works{
+
+        padding:100px 0;
+
+    }
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .works-header{
+
+        margin-bottom:60px;
+
+    }
+
+    .works-title{
+
+        font-size:2.3rem;
+
+    }
+
+    .works-description{
+
+        font-size:1rem;
+
+    }
+
+    .featured-project{
+
+        padding:30px;
+
+    }
+
+    .featured-content h3{
+
+        font-size:2rem;
+
+    }
+
+    .featured-content p{
+
+        font-size:1rem;
+
+    }
+
+    .featured-tags{
+
+        gap:10px;
+
+    }
+
+    .featured-tags span{
+
+        font-size:.8rem;
+
+    }
+
+    .project-card{
+
+        padding:28px;
+
+    }
+
+    .project-card h3{
+
+        font-size:1.5rem;
+
+    }
+
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .works-badge{
+
+        font-size:.72rem;
+
+        letter-spacing:1px;
+
+    }
+
+    .works-title{
+
+        font-size:2rem;
+
+    }
+
+    .featured-content h3{
+
+        font-size:1.7rem;
+
+    }
+
+    .featured-image{
+
+        height:250px;
+
+    }
+
+    .project-btn,
+
+    .view-all-btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================================
+   PREMIUM ANIMATIONS
+========================================================== */
+
+.featured-project,
+.project-card,
+.view-all-btn{
+
+    will-change:transform;
+
+}
+
+.project-card,
+.featured-project{
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+
+}
+
+.project-btn:active,
+.view-all-btn:active{
+
+    transform:scale(.97);
+
+}
+/* ==========================================================
+   WORKS FOOTER
+========================================================== */
+
+.works-footer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+}
+
+.works-footer p{
+
+    max-width:760px;
+
+    margin-bottom:36px;
+
+    color:rgba(255,255,255,.75);
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================================
+   VIEW ALL BUTTON
+========================================================== */
+
+.view-all-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 42px;
+
+    border:none;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #FBC400,
+        #FFD95A
+    );
+
+    color:#081D52;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 20px 40px rgba(251,196,0,.20);
+
+}
+
+.view-all-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 30px 60px rgba(251,196,0,.30);
+
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:1024px){
+
+    .featured-project{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        padding:40px;
+
+    }
+
+    .featured-content h3{
+
+        font-size:2.5rem;
+
+    }
+
+    .featured-image{
+
+        height:340px;
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .selected-works{
+
+        padding:100px 0;
+
+    }
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .works-header{
+
+        margin-bottom:60px;
+
+    }
+
+    .works-title{
+
+        font-size:2.3rem;
+
+    }
+
+    .works-description{
+
+        font-size:1rem;
+
+    }
+
+    .featured-project{
+
+        padding:30px;
+
+    }
+
+    .featured-content h3{
+
+        font-size:2rem;
+
+    }
+
+    .featured-content p{
+
+        font-size:1rem;
+
+    }
+
+    .featured-tags{
+
+        gap:10px;
+
+    }
+
+    .featured-tags span{
+
+        font-size:.8rem;
+
+    }
+
+    .project-card{
+
+        padding:28px;
+
+    }
+
+    .project-card h3{
+
+        font-size:1.5rem;
+
+    }
+
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .works-badge{
+
+        font-size:.72rem;
+
+        letter-spacing:1px;
+
+    }
+
+    .works-title{
+
+        font-size:2rem;
+
+    }
+
+    .featured-content h3{
+
+        font-size:1.7rem;
+
+    }
+
+    .featured-image{
+
+        height:250px;
+
+    }
+
+    .project-btn,
+
+    .view-all-btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================================
+   PREMIUM ANIMATIONS
+========================================================== */
+
+.featured-project,
+.project-card,
+.view-all-btn{
+
+    will-change:transform;
+
+}
+
+.project-card,
+.featured-project{
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+
+}
+
+.project-btn:active,
+.view-all-btn:active{
+
+    transform:scale(.97);
+
+}
+/* ==========================================================
+   FINAL PREMIUM POLISH
+========================================================== */
+
+/* Smooth Rendering */
+
+.selected-works *{
+
+    box-sizing:border-box;
+
+}
+
+/* Premium Transition */
+
+.featured-project,
+.project-card,
+.project-btn,
+.view-all-btn{
+
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease,
+        border-color .45s ease,
+        background .45s ease,
+        color .35s ease;
+
+}
+
+/* ==========================================================
+   SHINE EFFECT
+========================================================== */
+
+.featured-project::after,
+.project-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-40%;
+
+    width:45%;
+
+    height:300%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.08),
+
+        transparent
+
+    );
+
+    transform:rotate(25deg);
+
+    transition:.8s;
+
+    pointer-events:none;
+
+}
+
+.featured-project:hover::after,
+.project-card:hover::after{
+
+    left:140%;
+
+}
+
+/* ==========================================================
+   BUTTON HOVER
+========================================================== */
+
+.project-btn:hover,
+.view-all-btn:hover{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #FFD95A,
+
+        #FBC400
+
+    );
+
+}
+
+/* ==========================================================
+   TAG HOVER
+========================================================== */
+
+.featured-tags span:hover,
+.project-tags span:hover{
+
+    border-color:rgba(251,196,0,.35);
+
+    color:#FBC400;
+
+    cursor:default;
+
+}
+
+/* ==========================================================
+   IMAGE PLACEHOLDER
+========================================================== */
+
+.image-placeholder{
+
+    transition:.45s ease;
+
+}
+
+.featured-project:hover .image-placeholder{
+
+    transform:scale(1.03);
+
+    border-color:#FBC400;
+
+}
+
+/* ==========================================================
+   FOCUS ACCESSIBILITY
+========================================================== */
+
+.project-btn:focus-visible,
+.view-all-btn:focus-visible,
+.project-link:focus-visible{
+
+    outline:2px solid #FBC400;
+
+    outline-offset:4px;
+
+}
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/* ==========================================================
+   SECTION END
+========================================================== */

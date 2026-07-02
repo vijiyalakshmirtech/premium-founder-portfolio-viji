@@ -1,0 +1,203 @@
+/* ==========================================================
+   HERO GLASS CARD
+========================================================== */
+
+.hero-glass-card{
+
+    position:absolute;
+
+   top:160px;
+
+   right:-110px;
+
+   width:300px;
+
+    padding:28px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.18);
+
+   z-index:4;
+
+}
+
+/* ========================================================== */
+
+.hero-glass-card-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/* ========================================================== */
+
+.hero-glass-card-logo{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #081d52,
+        #112960,
+        #c4a446
+    );
+
+}
+
+/* ========================================================== */
+
+.hero-glass-card-logo-dot{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+}
+
+/* ========================================================== */
+
+.hero-glass-card-title h3{
+
+    color:#081d52;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.hero-glass-card-title p{
+
+    color:#6b7280;
+
+    margin-top:4px;
+
+    font-size:14px;
+
+}
+
+/* ========================================================== */
+
+.hero-glass-card-divider{
+
+    height:1px;
+
+    background:rgba(0,0,0,.08);
+
+    margin:24px 0;
+
+}
+
+/* ========================================================== */
+
+.hero-glass-card-services{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ========================================================== */
+
+.hero-glass-card-service{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+/* ========================================================== */
+
+.hero-service-check{
+
+    width:26px;
+
+    height:26px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#081d52;
+
+    color:#fff;
+
+    font-size:13px;
+
+}
+
+/* ========================================================== */
+
+.hero-service-title{
+
+    font-size:15px;
+
+    color:#374151;
+
+    font-weight:500;
+
+}
+
+/* ========================================================== */
+
+@media(max-width:1200px){
+
+.hero-glass-card{
+
+position:relative;
+
+top:auto;
+
+right:auto;
+
+margin-top:30px;
+
+width:100%;
+
+max-width:380px;
+
+}
+
+}

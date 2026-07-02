@@ -1,0 +1,1242 @@
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about{
+
+position:relative;
+
+overflow:hidden;
+
+padding:140px 0;
+
+background:#ffffff;
+
+}
+
+.about-container{
+
+width:92%;
+
+max-width:1400px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:480px 1fr;
+
+gap:90px;
+
+align-items:center;
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+.about::before{
+
+content:"";
+
+position:absolute;
+
+left:-220px;
+
+top:-220px;
+
+width:550px;
+
+height:550px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,#D4AF37 0%,transparent 70%);
+
+opacity:.08;
+
+filter:blur(90px);
+
+}
+
+.about::after{
+
+content:"";
+
+position:absolute;
+
+right:-250px;
+
+bottom:-250px;
+
+width:650px;
+
+height:650px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,#2957C8 0%,transparent 70%);
+
+opacity:.08;
+
+filter:blur(110px);
+
+}
+
+.about-glow{
+
+position:absolute;
+
+inset:0;
+
+pointer-events:none;
+
+background-image:
+
+linear-gradient(rgba(8,29,82,.03) 1px, transparent 1px),
+
+linear-gradient(90deg, rgba(8,29,82,.03) 1px, transparent 1px);
+
+background-size:60px 60px;
+
+mask-image:radial-gradient(circle at center,black 40%,transparent 90%);
+
+opacity:.45;
+
+}
+
+/* ===========================
+   LEFT COLUMN
+=========================== */
+
+.about-left{
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:650px;
+
+}
+
+/* ===========================
+   RIGHT COLUMN
+=========================== */
+
+.about-right{
+
+position:relative;
+
+}
+/* ==========================================
+   ABOUT IMAGE
+========================================== */
+
+.about-image-wrapper{
+
+position:relative;
+
+width:420px;
+
+height:540px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin:auto;
+
+z-index:2;
+
+animation:aboutFloat 6s ease-in-out infinite;
+
+}
+
+.about-image{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+object-position:center 12%;
+
+border-radius:32px;
+
+border:3px solid rgba(212,175,55,.45);
+
+box-shadow:
+
+0 40px 90px rgba(0,0,0,.18);
+
+transition:.45s;
+
+}
+
+.about-image:hover{
+
+transform:translateY(-8px) scale(1.02);
+
+box-shadow:
+
+0 60px 120px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   GOLD GLOW
+========================================== */
+
+.about-image-wrapper::before{
+
+content:"";
+
+position:absolute;
+
+width:520px;
+
+height:520px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,#D4AF37 0%,transparent 70%);
+
+filter:blur(120px);
+
+opacity:.12;
+
+z-index:-2;
+
+}
+
+/* ==========================================
+   BLUE GLOW
+========================================== */
+
+.about-image-wrapper::after{
+
+content:"";
+
+position:absolute;
+
+width:620px;
+
+height:620px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,#2957C8 0%,transparent 70%);
+
+filter:blur(160px);
+
+opacity:.12;
+
+z-index:-3;
+
+}
+
+/* ==========================================
+   EXPERIENCE BADGE
+========================================== */
+
+.experience-badge{
+
+position:absolute;
+
+bottom:-25px;
+
+right:-25px;
+
+width:170px;
+
+height:170px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:28px;
+
+background:rgba(255,255,255,.88);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(212,175,55,.25);
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.experience-badge h2{
+
+font-size:54px;
+
+line-height:1;
+
+margin-bottom:8px;
+
+color:#081D52;
+
+}
+
+.experience-badge span{
+
+font-size:15px;
+
+text-align:center;
+
+line-height:1.5;
+
+font-weight:600;
+
+color:#6D7B95;
+
+padding:0 15px;
+
+}
+
+/* ==========================================
+   FLOATING
+========================================== */
+
+@keyframes aboutFloat{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-14px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+/* ==========================================
+   SECTION TAG
+========================================== */
+
+.section-tag{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:10px 20px;
+
+border-radius:999px;
+
+background:rgba(212,175,55,.10);
+
+border:1px solid rgba(212,175,55,.25);
+
+color:#B89020;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+margin-bottom:26px;
+
+}
+
+.section-tag::before{
+
+content:"";
+
+width:10px;
+
+height:10px;
+
+border-radius:50%;
+
+background:#D4AF37;
+
+}
+
+/* ==========================================
+   MAIN TITLE
+========================================== */
+
+.about-title{
+
+font-size:66px;
+
+font-weight:700;
+
+line-height:1.02;
+
+color:#081D52;
+
+margin-bottom:18px;
+
+max-width:720px;
+
+font-family:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+
+letter-spacing:-0.02em;
+
+}
+
+.about-title .title-line{
+
+display:block;
+
+margin-top:6px;
+
+background:linear-gradient(90deg,#081D52,#2957C8);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.about-signature{
+
+margin-top:18px;
+
+font-style:italic;
+
+color:#6D7B95;
+
+font-weight:600;
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.about-text{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#5F6E88;
+
+max-width:720px;
+
+margin-bottom:40px;
+
+}
+
+.about-text strong{
+
+color:#081D52;
+
+font-weight:700;
+
+}
+
+/* ==========================================
+   ABOUT CARDS WRAPPER
+========================================== */
+
+.about-cards{
+
+display:flex;
+
+flex-direction:column;
+
+gap:22px;
+
+margin-top:20px;
+
+}
+
+/* ==========================================
+   CARD TITLE
+========================================== */
+
+.about-card h3{
+
+font-size:22px;
+
+font-weight:700;
+
+margin-bottom:14px;
+
+color:#081D52;
+
+}
+
+/* ==========================================
+   CARD TEXT
+========================================== */
+
+.about-card p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#6D7B95;
+
+}
+
+/* ==========================================
+   CTA AREA
+========================================== */
+
+.about-bottom{
+
+margin-top:45px;
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+/* ==========================================
+   PREMIUM ABOUT CARD
+========================================== */
+
+.about-card{
+
+position:relative;
+
+padding:30px;
+
+border-radius:26px;
+
+background:rgba(255,255,255,.78);
+
+border:1px solid rgba(8,29,82,.08);
+
+backdrop-filter:blur(20px);
+
+box-shadow:
+
+0 15px 40px rgba(8,29,82,.08);
+
+transition:all .35s ease;
+
+overflow:hidden;
+
+}
+
+/* ==========================================
+   GOLD ACCENT BAR
+========================================== */
+
+.about-card::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:5px;
+
+height:100%;
+
+background:linear-gradient(
+180deg,
+#D4AF37,
+#FFD86B
+);
+
+border-radius:10px;
+
+}
+
+/* ==========================================
+   CARD HOVER
+========================================== */
+
+.about-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 30px 70px rgba(8,29,82,.15);
+
+border-color:rgba(212,175,55,.30);
+
+}
+
+/* ==========================================
+   GOLD GLOW ON HOVER
+========================================== */
+
+.about-card::after{
+
+content:"";
+
+position:absolute;
+
+top:-80px;
+
+right:-80px;
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+rgba(212,175,55,.18),
+transparent 70%);
+
+opacity:0;
+
+transition:.4s;
+
+}
+
+.about-card:hover::after{
+
+opacity:1;
+
+}
+
+/* ==========================================
+   TITLE HOVER
+========================================== */
+
+.about-card:hover h3{
+
+color:#C89D1C;
+
+transition:.35s;
+
+}
+
+/* ==========================================
+   TEXT HOVER
+========================================== */
+
+.about-card:hover p{
+
+color:#45536D;
+
+transition:.35s;
+
+}
+
+/* ==========================================
+   BUTTON AREA
+========================================== */
+
+.about-bottom{
+
+margin-top:55px;
+
+display:flex;
+
+align-items:center;
+
+gap:24px;
+
+}
+
+/* ==========================================
+   OPTIONAL SMALL LABEL
+========================================== */
+
+.about-note{
+
+font-size:15px;
+
+color:#7B8AA4;
+
+font-weight:500;
+
+}
+/* ==========================================
+   SECTION FADE IN
+========================================== */
+
+.about{
+
+animation:aboutFade .9s ease both;
+
+}
+
+@keyframes aboutFade{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   IMAGE HOVER EFFECT
+========================================== */
+
+.about-image{
+
+transition:
+transform .45s ease,
+box-shadow .45s ease,
+border-color .45s ease;
+
+}
+
+.about-image:hover{
+
+transform:scale(1.03) translateY(-8px);
+
+border-color:rgba(212,175,55,.85);
+
+box-shadow:
+0 40px 100px rgba(8,29,82,.18);
+
+}
+
+/* ==========================================
+   EXPERIENCE BADGE HOVER
+========================================== */
+
+.experience-badge{
+
+transition:all .35s ease;
+
+}
+
+.experience-badge:hover{
+
+transform:translateY(-10px) scale(1.05);
+
+box-shadow:
+
+0 35px 80px rgba(8,29,82,.18);
+
+}
+
+/* ==========================================
+   TITLE ANIMATION
+========================================== */
+
+.about-title{
+
+animation:titleSlide .9s ease;
+
+}
+
+@keyframes titleSlide{
+
+0%{
+
+opacity:0;
+
+transform:translateX(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/* ==========================================
+   TEXT FADE
+========================================== */
+
+.about-text{
+
+animation:textFade 1.2s ease;
+
+}
+
+@keyframes textFade{
+
+0%{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   CARD APPEAR
+========================================== */
+
+.about-card{
+
+animation:cardReveal .8s ease both;
+
+}
+
+.about-card:nth-child(1){
+
+animation-delay:.15s;
+
+}
+
+.about-card:nth-child(2){
+
+animation-delay:.30s;
+
+}
+
+.about-card:nth-child(3){
+
+animation-delay:.45s;
+
+}
+
+@keyframes cardReveal{
+
+0%{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   DECORATIVE LINE
+========================================== */
+
+.about-right::after{
+
+content:"";
+
+position:absolute;
+
+top:-25px;
+
+left:0;
+
+width:120px;
+
+height:4px;
+
+border-radius:20px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#D4AF37,
+
+#2957C8
+
+);
+
+}
+
+/* ==========================================
+   FLOATING DOT
+========================================== */
+
+.about-right::before{
+
+content:"";
+
+position:absolute;
+
+top:-55px;
+
+right:40px;
+
+width:14px;
+
+height:14px;
+
+border-radius:50%;
+
+background:#D4AF37;
+
+box-shadow:
+
+0 0 30px rgba(212,175,55,.5);
+
+animation:dotFloat 5s ease-in-out infinite;
+
+}
+
+@keyframes dotFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+/* ==========================================
+   BUTTON AREA
+========================================== */
+
+.about-bottom{
+
+padding-top:12px;
+
+border-top:1px solid rgba(8,29,82,.08);
+
+margin-top:50px;
+
+}
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media (max-width:1200px){
+
+.about-container{
+
+grid-template-columns:1fr;
+
+gap:70px;
+
+}
+
+.about-left{
+
+order:1;
+
+min-height:auto;
+
+}
+
+.about-right{
+
+order:2;
+
+}
+
+.about-image-wrapper{
+
+width:380px;
+
+height:500px;
+
+margin:auto;
+
+}
+
+.experience-badge{
+
+width:150px;
+
+height:150px;
+
+right:-10px;
+
+bottom:-10px;
+
+}
+
+.about-title{
+
+font-size:54px;
+
+text-align:center;
+
+}
+
+.about-text{
+
+text-align:center;
+
+margin-left:auto;
+
+margin-right:auto;
+
+}
+
+.section-tag{
+
+margin:0 auto 26px;
+
+}
+
+.about-cards{
+
+max-width:760px;
+
+margin:30px auto 0;
+
+}
+
+.about-bottom{
+
+justify-content:center;
+
+}
+
+}
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.about{
+
+padding:90px 0;
+
+}
+
+.about-container{
+
+width:92%;
+
+gap:50px;
+
+}
+
+.about-image-wrapper{
+
+width:300px;
+
+height:390px;
+
+}
+
+.experience-badge{
+
+width:120px;
+
+height:120px;
+
+border-radius:22px;
+
+}
+
+.experience-badge h2{
+
+font-size:36px;
+
+}
+
+.experience-badge span{
+
+font-size:12px;
+
+}
+
+.about-title{
+
+font-size:38px;
+
+line-height:1.2;
+
+text-align:center;
+
+}
+
+.about-title span{
+
+margin-top:6px;
+
+}
+
+.about-text{
+
+font-size:17px;
+
+line-height:1.8;
+
+text-align:center;
+
+}
+
+.about-card{
+
+padding:24px;
+
+}
+
+.about-card h3{
+
+font-size:20px;
+
+}
+
+.about-card p{
+
+font-size:15px;
+
+}
+
+.about-bottom{
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.about-right::before,
+
+.about-right::after{
+
+display:none;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.about-image-wrapper{
+
+width:260px;
+
+height:340px;
+
+}
+
+.about-title{
+
+font-size:32px;
+
+}
+
+.about-text{
+
+font-size:15px;
+
+}
+
+.about-card{
+
+padding:20px;
+
+border-radius:20px;
+
+}
+
+}
+
+/* ==========================================
+   FINAL POLISH
+========================================== */
+
+.about *{
+
+box-sizing:border-box;
+
+}
+
+.about img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+.about button{
+
+transition:all .35s ease;
+
+}
+
+.about button:hover{
+
+transform:translateY(-3px);
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}

@@ -1,0 +1,221 @@
+.portfolio-shell{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.portfolio-shell--studio,
+.portfolio-shell--work,
+.portfolio-shell--contact{
+  min-height:100vh;
+  padding-top:120px;
+}
+
+.portfolio-shell--studio{
+  --page-accent:#F2D77A;
+  --page-surface:rgba(7, 25, 54, 0.72);
+}
+
+.portfolio-shell--work{
+  --page-accent:#9FD3FF;
+  --page-surface:rgba(11, 32, 72, 0.74);
+}
+
+.portfolio-shell--contact{
+  --page-accent:#B6F2D1;
+  --page-surface:rgba(10, 34, 58, 0.78);
+}
+
+.page-section{
+  position:relative;
+  padding:48px 0 72px;
+}
+
+.page-shell-hero{
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:32px;
+  align-items:center;
+  padding:48px;
+  border-radius:32px;
+  background:linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03));
+  border:1px solid rgba(255,255,255,0.16);
+  backdrop-filter:blur(24px);
+  box-shadow:0 30px 80px rgba(8,28,71,0.18);
+  overflow:hidden;
+  position:relative;
+}
+
+.page-shell-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at top left, color-mix(in srgb, var(--page-accent) 35%, transparent), transparent 45%);
+  pointer-events:none;
+}
+
+.page-shell-hero--stacked{
+  grid-template-columns:1fr;
+}
+
+.page-shell-copy h2{
+  font-size:clamp(2.1rem, 3.2vw, 3rem);
+  line-height:1.08;
+  margin:16px 0 18px;
+  color:#ffffff;
+}
+
+.page-shell-copy p{
+  color:rgba(255,255,255,0.8);
+  font-size:1.05rem;
+  line-height:1.8;
+  max-width:680px;
+}
+
+.page-badge{
+  display:inline-flex;
+  padding:10px 16px;
+  border-radius:999px;
+  background:color-mix(in srgb, var(--page-accent) 16%, rgba(255,255,255,0.08));
+  border:1px solid color-mix(in srgb, var(--page-accent) 35%, transparent);
+  color:var(--page-accent);
+  font-size:0.8rem;
+  font-weight:700;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+}
+
+.page-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:24px;
+}
+
+.ghost-btn{
+  border:1px solid rgba(255,255,255,0.18);
+  background:rgba(255,255,255,0.06);
+  color:#ffffff;
+  padding:13px 22px;
+  border-radius:999px;
+  font-weight:700;
+  cursor:pointer;
+  transition:transform .25s ease, background .25s ease;
+}
+
+.ghost-btn:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,0.12);
+}
+
+.three-d-card{
+  position:relative;
+  transform-style:preserve-3d;
+  border-radius:28px;
+  box-shadow:0 24px 60px rgba(0,0,0,0.24);
+  overflow:hidden;
+}
+
+.three-d-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg, rgba(255,255,255,0.22), transparent 35%, rgba(212,175,55,0.16));
+  pointer-events:none;
+}
+
+.page-shell-card,
+.work-card,
+.contact-page-card{
+  position:relative;
+  padding:28px;
+  background:linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.05));
+  border:1px solid rgba(255,255,255,0.16);
+  backdrop-filter:blur(24px);
+}
+
+.page-shell-card__glow{
+  position:absolute;
+  inset:auto -20px -30px auto;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(212,175,55,0.24), transparent 70%);
+  filter:blur(24px);
+}
+
+.page-shell-card__inner h3{
+  color:#ffffff;
+  margin:12px 0 16px;
+  font-size:1.35rem;
+}
+
+.page-shell-card__inner ul{
+  padding-left:18px;
+  color:rgba(255,255,255,0.82);
+  line-height:1.8;
+}
+
+.card-label{
+  color:#F2D77A;
+  font-weight:700;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  font-size:0.8rem;
+}
+
+.work-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:20px;
+  margin-top:24px;
+}
+
+.work-card__top{
+  height:110px;
+  border-radius:20px;
+  background:linear-gradient(135deg, rgba(212,175,55,0.24), rgba(14,47,118,0.2));
+  margin-bottom:18px;
+}
+
+.work-card h3{
+  color:#ffffff;
+  margin-bottom:10px;
+}
+
+.work-card p{
+  color:rgba(255,255,255,0.8);
+  line-height:1.7;
+}
+
+.contact-page-card{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto;
+}
+
+.contact-page-card h2{
+  color:#ffffff;
+  font-size:clamp(2rem, 3vw, 2.7rem);
+  margin:18px 0 16px;
+}
+
+.contact-page-card p{
+  color:rgba(255,255,255,0.82);
+  line-height:1.8;
+}
+
+@media (max-width: 1024px) {
+  .page-shell-hero{ grid-template-columns:1fr; padding:32px; }
+  .work-grid{ grid-template-columns:1fr; }
+}
+
+@media (max-width: 640px) {
+  .portfolio-shell--studio,
+  .portfolio-shell--work,
+  .portfolio-shell--contact{ padding-top:100px; }
+  .page-shell-hero{ padding:24px; }
+  .page-actions{ flex-direction:column; }
+  .ghost-btn{ width:100%; text-align:center; }
+}

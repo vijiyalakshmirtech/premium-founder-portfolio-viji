@@ -1,0 +1,198 @@
+/* ==========================================================
+   HERO METRICS
+========================================================== */
+
+.hero-metrics{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,minmax(0,1fr));
+
+    gap:24px;
+
+    width:100%;
+
+    margin-top:16px;
+
+}
+
+/* ==========================================================
+   METRIC CARD
+========================================================== */
+
+.hero-metric-card{
+
+    position:relative;
+
+    padding:28px 24px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(8,28,71,.10);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    overflow:hidden;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+.hero-metric-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(14,47,118,.22);
+
+    box-shadow:
+
+        0 28px 60px rgba(8,28,71,.18);
+
+}
+
+/* ==========================================================
+   TOP BORDER
+========================================================== */
+
+.hero-metric-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #081C47,
+
+            #0E2F76,
+
+            #3574C0
+
+        );
+
+}
+
+/* ==========================================================
+   VALUE
+========================================================== */
+
+.hero-metric-value{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    line-height:1;
+
+    color:#081C47;
+
+    margin-bottom:14px;
+
+}
+
+/* ==========================================================
+   LABEL
+========================================================== */
+
+.hero-metric-label{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0E2F76;
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.hero-metric-description{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    color:#5F6C80;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+.hero-metrics{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-metrics{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-metric-card{
+
+text-align:center;
+
+}
+
+.hero-metric-value{
+
+font-size:44px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-metric-card{
+
+padding:24px;
+
+}
+
+.hero-metric-value{
+
+font-size:38px;
+
+}
+
+.hero-metric-label{
+
+font-size:17px;
+
+}
+
+}

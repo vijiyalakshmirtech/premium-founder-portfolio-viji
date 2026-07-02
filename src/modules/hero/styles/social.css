@@ -1,0 +1,153 @@
+/* ==========================================================
+   HERO SOCIAL
+========================================================== */
+
+.hero-social{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:56px;
+
+}
+
+/* ==========================================================
+   SOCIAL LINK
+========================================================== */
+
+.hero-social-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:130px;
+
+    height:48px;
+
+    padding:0 20px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(8,28,71,.12);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        border-color .35s ease,
+        color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.hero-social-link:hover{
+
+    transform:translateY(-4px);
+
+    background:#081C47;
+
+    border-color:#081C47;
+
+    box-shadow:
+        0 20px 40px rgba(8,28,71,.22);
+
+}
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.hero-social-text{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:.02em;
+
+    color:#081C47;
+
+    transition:color .35s ease;
+
+}
+
+.hero-social-link:hover .hero-social-text{
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   ACTIVE
+========================================================== */
+
+.hero-social-link:active{
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================================
+   FOCUS
+========================================================== */
+
+.hero-social-link:focus-visible{
+
+    outline:2px solid #3574C0;
+
+    outline-offset:4px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+.hero-social{
+
+justify-content:center;
+
+}
+
+.hero-social-link{
+
+min-width:120px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-social{
+
+gap:12px;
+
+}
+
+.hero-social-link{
+
+width:100%;
+
+max-width:280px;
+
+}
+
+}

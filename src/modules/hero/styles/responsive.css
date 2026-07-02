@@ -1,0 +1,255 @@
+/* ==========================================================
+   HERO RESPONSIVE
+========================================================== */
+
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+
+@media (max-width:1440px){
+
+.hero-container{
+
+gap:80px;
+
+}
+
+.hero-right{
+
+min-height:680px;
+
+}
+
+.hero-image-wrapper{
+
+width:390px;
+
+height:530px;
+
+}
+
+}
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width:1200px){
+
+.hero{
+
+padding:120px 0 100px;
+
+}
+
+.hero-container{
+
+grid-template-columns:1fr;
+
+gap:80px;
+
+text-align:center;
+
+}
+
+.hero-left{
+
+align-items:center;
+
+}
+
+.hero-right{
+
+min-height:auto;
+
+padding-top:20px;
+
+}
+
+.hero-description-wrapper{
+
+margin-inline:auto;
+
+}
+
+.hero-actions{
+
+justify-content:center;
+
+}
+
+.hero-social{
+
+justify-content:center;
+
+}
+
+.hero-metrics{
+
+width:100%;
+
+max-width:700px;
+
+margin-inline:auto;
+
+}
+
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+.hero{
+
+padding:100px 0 80px;
+
+}
+
+.hero-container{
+
+width:94%;
+
+}
+
+.hero-heading{
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.hero-description{
+
+text-align:center;
+
+}
+
+.hero-image-wrapper{
+
+width:340px;
+
+height:460px;
+
+}
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+.hero{
+
+min-height:auto;
+
+padding:90px 0 70px;
+
+}
+
+.hero-container{
+
+gap:60px;
+
+}
+
+.hero-actions{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.hero-social{
+
+justify-content:center;
+
+}
+
+.hero-metrics{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-image-wrapper{
+
+width:300px;
+
+height:410px;
+
+}
+
+.hero-glass-card{
+
+margin-top:30px;
+
+}
+
+.hero-floating-card{
+
+max-width:320px;
+
+}
+
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+.hero{
+
+padding:80px 0 60px;
+
+}
+
+.hero-container{
+
+width:92%;
+
+gap:50px;
+
+}
+
+.hero-image-wrapper{
+
+width:260px;
+
+height:360px;
+
+}
+
+.hero-actions .btn{
+
+width:100%;
+
+}
+
+.hero-social-link{
+
+width:100%;
+
+}
+
+.hero-glass-card{
+
+width:100%;
+
+}
+
+.hero-floating-card{
+
+width:100%;
+
+}
+
+}
